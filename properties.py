@@ -15,7 +15,7 @@ class Person():
         self.age = age
         self.name = name
 
-p1 = Person("sudhir",23)
+p1 = Person("Milan Varu",21)
 print(p1.name, p1.age)
 
 #__str__() function
@@ -29,7 +29,7 @@ class Person():
     def __str__(self):
         return f"{self.name}({self.age})"
 
-p1 = Person("sudhir",23)
+p1 = Person("Milan Varu",21)
 print(p1)
 
 ##create a method in class person:
@@ -43,7 +43,7 @@ class Person():
         print("hello! My name is " + self.name)
         print(f"My age is {self.age}")
 
-p1 = Person("sudhir", 23)
+p1 = Person("Milan Varu", 21)
 p1.age = 40
 p1.MyFunc()
 
@@ -57,7 +57,7 @@ class Person():
     def myfunc(abc):
         print("hii! i am "+ abc.name)
 
-p1 = Person("vinay",23)
+p1 = Person("Jay Varu",23)
 p1.myfunc()
 
 #class definition can not be empty but if you have a class DEFINITION WITHOUT CONTENT for some reason put the pass statement to avoi getting an error.
@@ -81,7 +81,7 @@ class Person:
 class Student(Person):
     pass
 
-p1 = Student("krishna","vora")
+p1 = Student("Ronak","Manav")
 # p1.surname = "vala" #for change in surname or veriable
 p1.printname()
 
@@ -103,7 +103,7 @@ class Student(Person):
         print("90 marks achieved by "+ self.fname)
 
 
-p1 = Student("krishna","vora")
+p1 = Student("Ronak ","Manav")
 # p1.surname = "vala" #for change in surname or veriable
 p1.printname()
 p1.mark()
@@ -132,6 +132,6 @@ class Student(Person):
     def grad(self):
         print("i did my graduation in",self.gradyear)
 
-p1 = Student("nia","shetty")
+p1 = Student("Meet","Ajay")
 p1.printname()
 p1.grad()
