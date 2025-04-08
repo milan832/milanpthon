@@ -35,6 +35,7 @@ letters.extend(abc)
 letters.insert(2,"t")
 print(letters)
 print(letters.pop(2))
+
 letters.remove("a")
 print(letters)
 del letters[0:2]
@@ -94,7 +95,7 @@ for age in adults:
 ages = [(5, 12), (17, 18), (24, 32)]
 #[expression for variable in perameter]
 x = [age[1] for age in ages]
-print(x)
+print(x) 
 
 
 # zip function
@@ -110,17 +111,18 @@ stack.append(1)
 stack.append(2)
 stack.append(3)
 
-print("Stack:", stack)  # Output: [1, 2, 3]
+print("Stack:", stack)  
 
-print("Popped:", stack.pop())  # Output: 3
-print("Stack after pop:", stack)  # Output: [1, 2]
+print("Popped:", stack.pop())  
+print("Stack after pop:", stack)  
 
-print("Top element:", stack[-1])  # Output: 2
+print("Top element:", stack[-1])  
 
 if not stack:
     print("Stack is empty")
 else:
     print("Stack is not empty")
+    
 
 # queues
 from collections import deque
